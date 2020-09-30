@@ -1,0 +1,37 @@
+<?php
+
+$router->get('HSR', 'PagesController@home');
+$router->get('HSR/ods', 'PagesController@ods');
+$router->get('HSR/oda', 'PagesController@oda');
+$router->get('HSR/ods-season', 'PagesController@season');
+$router->get('HSR/admin-post', 'PagesController@post');
+$router->post('HSR/post', 'PagesController@createpost');
+$router->post('HSR/player', 'PagesController@player');
+$router->get('HSR/contact', 'PagesController@contact');
+$router->post('HSR/contact', 'PagesController@sendmail');
+$router->get('HSR/login', 'UserController@login');
+$router->post('HSR/login', 'UserController@loggedin');
+$router->get('HSR/signup', 'UserController@signup');
+$router->post('HSR/signup', 'UserController@store');
+$router->get('HSR/users', 'UserController@index');
+$router->get('HSR/user', 'UserController@index');
+$router->get('HSR/logout', 'UserController@logout');
+$router->get('HSR/new-player', 'UserController@newplayer');
+$router->post('HSR/new-player', 'UserController@playerstore');
+$router->get('HSR/new-match', 'PagesController@newmatch');
+$router->post('HSR/new-match', 'PagesController@matchstore');
+$router->post('HSR/results', 'PagesController@results');
+$router->get('HSR/admin', 'UserController@admin');
+$router->post('HSR/adminchange', 'UserController@adminchange');
+$router->get('HSR/media', 'PagesController@media');
+$router->post('HSR/media', 'PagesController@showvideo');
+$router->get('HSR/tickets', 'PagesController@tickets');
+$router->post('HSR/tickets', 'PagesController@deleteticket');
+$router->get('HSR/jerseys', 'PagesController@jerseys');
+$router->post('HSR/jerseys', 'PagesController@jerseystore');
+$router->get('HSR/orders', 'PagesController@orders');
+$router->post('HSR/orders', 'PagesController@paid');
+$router->post('HSR/deleteuser', 'UserController@deleteuser');
+$router->post('HSR/deleteorder', 'PagesController@deleteorder');
+$router->post('HSR/updatepw', 'UserController@updatepw');
+$router->post('HSR/deletepost', 'PagesController@deletepost');

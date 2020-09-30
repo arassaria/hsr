@@ -1,0 +1,265 @@
+html {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-left) env(safe-area-inset-bottom);
+    margin: 0;
+}
+
+body {
+    background-image: url("/HSR/pics/homepage-background.png");
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    padding-bottom: 3em;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.sidebar{
+    flex-basis: 125px;
+    text-align: center;
+    background-color: #c61618;
+    color: white;
+    overflow-y: auto;
+}
+
+.sidebar-wrapper {
+    margin-top: 2rem;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.nav {
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1em;
+    color: white;
+    text-align: center;
+    background-color: #c61618;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.footer{
+    position:fixed;
+    padding: .6em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #c61618;
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: 4px 4px 4px #333333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 4px 4px 4px #333333;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.33em;
+    color: white;
+    text-shadow: 4px 4px 4px #333333;
+}
+
+.center {
+    text-align: center;
+    font-size: 1em;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    background: white;
+    color: black;
+    max-width: 800px;
+    width: 80%;
+  }
+
+table, tr, td {
+    border: 2px solid black;
+}
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+}
+
+.right {
+    text-align: right;
+}
+
+.blue {
+    color: #0000CC;
+}
+
+.red {
+    color: #DD0000;
+}
+
+.postform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hsr {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+div.shadowbox {
+    text-align: center;
+    width:80%;
+    padding:.625em;
+    border:.3125em solid #C61618;
+    margin:.625em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 5px #333333;
+    background: #C61618;
+    color: white;
+    font-size: 1em;
+}
+
+div.videobox {
+    text-align: center;
+    width: 560px;
+    height: 315px;
+    padding: 0em;
+    margin: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 5px #333333;
+    background: #C61618;
+}
+
+.expand{
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+}
+.expand:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #FFFFFF;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin:100% 50%
+}
+.expand:hover:after { 
+    transform: scaleX(1);
+    transform-origin:0 50%;
+}
+
+.grid {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    margin: 1em;
+    box-shadow: 10px 10px 5px #333333;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+}
+
+.grid__column {
+    flex: 1;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.grid__column__date {
+    border: 1px solid black;
+    width: 100px;
+}
+
+.heading {
+    font-size: 1.1em;
+    flex: 1;
+}
+
+.text {
+    flex: 1;
+}
+
+.heading__table {
+    border: 2px solid black;
+    font-size: 1.1em;
+    flex: 1;
+}
+
+.placement {
+    border: 2px solid black;
+}
+
+.team {
+    margin-left: 12em;
+    margin-right: 12em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.grid__column__heropic {
+    width: 300px;
+    height: 169px;
+    border: 1px solid black;
+    background: #C61618;
+    background-image: url("/HSR/pics/hero-background.png")
+}
+
+.playername {
+    flex: 1;
+    align-items: center;
+    background: #C61618;
+    padding-top: 2.5em;
+}
+
+.player {
+    background: #C61618;
+}
